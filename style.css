@@ -1,0 +1,115 @@
+section {
+    font-family: "Plus Jakarta Sans";
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.block {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: gray;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    font-size:60px;
+    text-align: center;
+    color:white;
+    margin-bottom:40px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color:#333;
+    margin-bottom: 40px;
+}
+.SignUpform,
+.Loginform {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    border-radius: 20px;
+    padding:30px;
+    background: rgb(235, 233, 233);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+.form label {
+    font-weight: 600;
+    color: #555;
+}
+.form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.form input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+#signupbtn,
+#loginbtn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+#logoutbtn{
+    display:block;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin:50px auto;
+}    
+
+#loginbtn:hover {
+    background-color: #357ab8;
+}
+#signupbtn:hover{
+    background-color: #357ab8;
+}
+
+#logoutbtn:hover{
+    background-color: #357ab8;
+}
+
+
+
+
+
+.foot {
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+}
