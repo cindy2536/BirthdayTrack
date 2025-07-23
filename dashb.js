@@ -24,10 +24,10 @@ firebase.auth().onAuthStateChanged(async (user) => {
 
       let quoteText = "", quoteAuthor = "";
       try {
-        const q = await fetch("https://api.quotable.io/random").then(res => res.json());
-        quoteText   = q.content;
-        quoteAuthor = q.author;
-      } catch (e) {
+        const q = await fetch("https://favqs.com/api/qotd").then(res => res.json());
+        quoteText   = q.quote.body;
+        quoteAuthor = q.quote.author;
+       } catch (e) {
         console.warn("Quote API failed", e);
       }
 
