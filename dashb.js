@@ -24,9 +24,10 @@ firebase.auth().onAuthStateChanged(async (user) => {
 
       let quoteText = "", quoteAuthor = "";
       try {
-        const q = await fetch("https://favqs.com/api/qotd").then(res => res.json());
-        quoteText   = q.quote.body;
-        quoteAuthor = q.quote.author;
+        const q = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://favqs.com/api/qotd')).then(res => res.json());//the first response
+        const parsed = JSON.parse(q.contents);//the second response
+        quoteText   = parsed.quote.body;
+        quoteAuthor = parsed.quote.author;
        } catch (e) {
         console.warn("Quote API failed", e);
       }
